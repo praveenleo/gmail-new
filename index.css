@@ -1,0 +1,504 @@
+    *{
+    margin:0;
+    padding: 0;
+}
+.header-left img{
+    height:30px;
+    object-fit: contain;
+    margin-left: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    width: 10%;
+}
+.header-left span{
+    padding: 10px;
+    cursor: pointer;
+}
+.header-middle{
+    display: flex;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+    width: 38%;
+    height: 27px;
+    margin-right: auto;
+    margin-left: 67px;
+}
+.material-icons{
+    color:grey;
+}
+.header-middle input{
+    border:none;
+    width:100%;
+    padding:10px;
+    outline:none;
+    font-size: medium;
+    background-color: transparent;
+}
+.header-right{
+    display: flex;
+    padding-right: 20px;
+    width: 21%;
+    margin-left: auto;
+    align-items: center;
+}
+.header-right img{
+    padding-left: 9px;
+}
+.header-right span{
+    padding:10px;
+    cursor:pointer;
+}
+/* media query starts */
+@media only screen and (max-width: 1440px) {
+    .header-right{
+        width: 21%;
+    }
+    .header-middle{
+        margin-left: 154px;
+    }
+    .header-left{
+    
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .header-middle{
+        margin-left: 115px;
+        margin-left: 182px;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .header-left img{
+        width: 50px;
+        margin-left: -8px;
+    }
+    .header-middle{
+        height: 1px;
+        width: 105px;
+    }
+    .header-middle .se{
+        font-size: 15px;
+        padding-right: 0px;
+    }
+    .header-left span{
+        font-size: 12px;
+    }
+    .header-middle img{
+        width: 15px;
+    }
+    .header{
+height: 30px;
+    }
+    .header-middle input{
+        font-size: 7px;
+    }
+    .header-left{
+        width: 9%;
+    }
+    .header-right .active{
+        width: 54px;
+    }
+    .header-right{
+        width: 39%;
+    }
+    .header-right .material-icons{
+        font-size: 14px;
+    }
+    .header-right .menu{
+        width: 17px;
+        margin-left: -15px;
+    }
+    .header-right img{
+        width: 60px;
+    }
+    .header-right .one{
+        padding-left: 0px;
+    }
+    .header-right .two{
+        margin-left: -16px;
+    }
+
+}
+
+@media only screen and (max-width: 2560px) {
+    .header-right{
+        width: 26.5%;
+    }
+    .header-left{
+        width:6%;
+    }
+    .header-middle{
+        width: 29.5%;
+    }
+}
+/* media query ends */
+
+
+.arrowdropdown{
+    display: flex;
+    align-items: center;
+}
+.arrowimage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar{
+    width: 13%;
+    max-width: 300px;
+    padding-right:20px;
+}
+.sidebar-compose{
+    margin-top:15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color:grey;
+    padding:15px;
+    border-radius:30px;
+    background-color:white;
+    display:flex;
+    align-items:center;
+    cursor:pointer;
+    border:none;
+    box-shadow:0px 2px 5px -2px rgba(0, 0,0,0.75);
+}
+.sidebar-compose span{
+   margin-right: 5px;
+}
+.sidebaroption{
+    display: flex;
+    align-items: center;
+    height:40px;
+    padding:0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor:pointer;
+    color:#818181;
+}
+.sidebaroption .material-icons{
+    padding:5px;
+}
+.sidebaroption h3{
+    flex:1;
+    margin-left:10px;
+    font-size:14px;
+    font-weight: 400;
+}
+.sidebaroption:hover,
+.sidebaroption:hover h3,
+.sidebaroption:hover.material-icons,
+.sidebaroption_active,
+.sidebaroption_active h3,
+.sidebaroption_active .material-icons{
+    background-color:#fcecec;
+    color:#c04b37;
+    font-weight: 800;
+}
+.sidebar-footer{
+    display:flex;
+    justify-content: center;
+}
+.sidebar-footericons.material-icons{
+    margin:7px;
+    cursor: pointer;
+}
+.mainbody{
+    display: flex;
+    height: 100vh;
+}
+body{
+    height:100vh;
+    overflow-y: hidden;
+}
+
+
+
+/* side bar media query starts */
+
+@media only screen and (max-width: 2560px){
+    .sidebaroption_active{
+        height: 30px;
+    }
+
+
+}
+
+/* side bar media query ends */
+
+
+/* email list starting */
+
+
+.emailList{
+    width: 83%;
+overflow:scroll;
+}
+.emailList-setting{
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index:999;
+    padding:8px;
+}
+
+.emailList-settingLeft{
+    display: flex;
+    align-items: center;
+}
+
+.emailList-settingRight{
+    display: flex;
+    align-items: center;
+}
+
+.emailList-setting .material-icons{
+margin:5px;
+cursor:pointer;
+}
+/* .section{
+    display: flex;
+    align-items: center;
+    border-bottom-width:2px;
+    padding:15px;
+    min-width:200px;
+    cursor:pointer;
+    color:grey;
+    border-width:0;
+} */
+/* .emailList-section{
+    position:sticky;
+    top:0;
+    display: flex;
+    background-color: white;
+    border-bottom:1px solid whitesmoke;
+    z-index:999;
+
+} */
+/* .section-selected{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color:red;
+    border-bottom:3px solid red;
+}
+.section-selected.material-icons{
+    color:red;
+}
+.section:hover{
+    background-color: whitesmoke;
+    border-width:3px;
+}
+.section h4{
+    font-size:14px;
+    margin-left: 15px;
+} */
+.emailrow-options{
+    display: flex;
+    align-items: center;
+}
+.emailrow-options .material-icons,input{
+    margin:5px;
+}
+.emailrow{
+    display:flex;
+    align-items: center;
+    height: 50px;
+    border-bottom:1px solid whitesmoke;
+    cursor:pointer;
+    width: 100%;
+}
+.emailrow:hover{
+    border-top:1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0, 0,0,0.24);
+}
+.emailrow-message{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    font-size:13px;
+}
+.emailrow-message h4{
+    width: 95%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    padding-left:5px;
+    padding-right:5px;
+    font-family: arial;
+    font-weight: normal;
+    font-size: 15px;
+}
+.emailrow-title{
+    font-size: 14px;
+    width: 8%;
+    font-family: arial;
+    font-weight: normal;
+}
+.mailrow-time{
+    padding-right:15px;
+    font-size:10px;
+    font-weight: bold;
+}
+.emailrow-description{
+    font-weight: 400;
+    color:grey;
+}
+
+
+/* right side bar starts */
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+/* right side bar ends */
+
+
+
+/* @media only screen and (max-width: 425px) {
+    .sidebar{
+        flex:0.3;
+        max-width: 300px;
+        padding-right:20px;
+    }
+    .emailList{
+        flex:90%;
+        overflow:scroll;
+        }
+        .emailrow-options{
+            display:none;
+        }
+        .emailrow{
+            display:flex;
+            align-items: center;
+            height: 50px;
+            border-bottom:1px solid whitesmoke;
+            cursor:pointer;
+            z-index: 999;
+        }
+        .emailList-section {
+           display: flex;
+           flex-direction: column;
+        }
+
+       .emailrow-description{
+           display: none;
+       }
+       .emailrow-options{
+        display: flex;
+        align-items: center;
+    }
+
+    .emailrow p{
+        padding-right:100px;
+    }
+    .emailrow-options h4{
+        display: flex;
+        align-items: center;
+    }
+    .emailrow-message span{
+display: none;
+    }
+    .emailrow-message{
+        font-size: 10px;
+    }
+    .emailrow-title{
+        font-size:10px;
+    }
+    .emailList-settingLeft{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .emailList-settingRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .emailList-section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+     }
+
+    } */
+
+
+    /* main contain starts */
+
+@media only screen and (max-width: 2560px) {
+.mainRightSide{
+
+}
+.emailList{
+    width: 91%;
+}
+.sidebar{
+    width: 8%;
+}
+}
+
+
+@media only screen and (max-width: 1440px) {
+    /* .emailrow h3{
+        width: 14%;
+}
+.sidebar{
+    width: 15%;
+}
+.emailrow h4{
+    width: 87%;
+}
+.emailrow-time{
+
+} */
+.emailList{
+    width: 91%;
+}
+.emailrow h3{
+    width: 8%;
+}
+.emailrow h4{
+    width: 93%
+}
+.emailrow p{
+   width:6%
+}
+.sidebar{
+    width: 17%;
+}
+
+}
+
+
+
+    
+
+
+
+       /* main contain ends */
+
+
+
+
+
